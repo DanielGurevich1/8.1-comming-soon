@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
     width: 100%;
-    background-color: aqua;
+    padding: var(--section-padding);
+    /* background-color: aqua; */
 
 }
     .container > .row-short {
@@ -23,14 +24,11 @@
                     float: left;
                 }
                 .container > .row > .column.left {
-                    
                     width: 50%;
-                    /* margin-left: 10%;
-                    grid-column: 2 / 3; */
+                    
                 }
                 .container > .row > .column.right {
-                    
                     width: 40%;
                     margin-left: 10%;
-                    /* grid-column: 4 / 5; */
+                
                 }

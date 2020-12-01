@@ -1,12 +1,32 @@
 .container.hero {
-    padding-bottom: var(--section-padding);
+    padding-bottom: clac(var(--section-padding) * 0,5);
     background-image: url(../img/hero-image-dg.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
  .hero {
 text-align: center;
 }
+
+.hero > .row.short {
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+}
+.footer > .container {
+    padding-top: 0;
+    padding-bottom: calc(var(--section-padding) * 1,5);
+}
+
+.footer.container > .row.short {
+    padding-top: 50px;
+}
+
+.bg-main-color {
+   background-color: (--main-color);
+} 
