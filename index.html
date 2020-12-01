@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <!-- 3-rdparty -->
+    <!-- component -->
+    <link rel="stylesheet" href="">
+    <!-- custom -->
+    <link rel="stylesheet" href="/css/custom.css"> 
     <title>Comming soon</title>
 </head>
 <body>
-    <div class="hero">
-        <img src="./img/coming-soon-logo.png" alt="logo">   
-        <div class="hero.header">
-            <h1 class="h1">Coming soon</h1>
+    <div class="container>
+           
+        <div class="row-short">
+            <img src="./img/coming-soon-logo.png" alt="logo"><h1 class="h1">Coming soon</h1>
             <p class="text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione quam velit facere unde consectetur delectus reiciendis nisi dignissimos perspiciatis eaque placeat corporis reprehenderit, harum eius quibusdam non dolore sequi.</p>
 
             <div class="clock">
@@ -31,28 +40,35 @@
         </div>
     </div>
     <div class="container">
-        <div class="left colomn"> 
-            <h2>About startup</h2>
-            <p>Matrox material design multi-porpose html template...</p>
-            <div class="UX Design">progress bar</div>
-            <div class="Web Design">progress bar</div>
-            <div class="Web Development">progress bar</div>
-        </div>
-        <div class=" right colomn">
-            <h2>About startup</h2>
-            <p>You can use contact form below...</p>
-            <form action="#">Have any questions?</form>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="social media"></div>
-        <img src="./img/logo-footer.png" alt="Logo.footer">
-        <div>
-            <link rel="stylesheet" href="">
-            <link rel="stylesheet" href="">
-            <link rel="stylesheet" href="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quis, id perspiciatis dignissimos inventore necessitatibus molestiae voluptatum cupiditate? Sapiente molestiae voluptatum aspernatur est maiores consectetur rem veritatis eius ut neque.</p>
+        <div class="row">
+            <div class="left colomn"> 
+                <h2>About startup</h2>
+                <p>Matrox material design multi-porpose html template...</p>
+                <div class="UX Design">progress bar</div>
+                <div class="Web Design">progress bar</div>
+                <div class="Web Development">progress bar</div>
+            </div>
+            <div class=" right colomn">
+                <h2>Have you got any questions?</h2>
+                <p>You can use contact form below...</p>
+                <form action="#">Have any questions?</form>
+            </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="social media"></div>
+            <!-- <img src="./img/logo-footer.png" alt="Logo.footer"> -->
+            
+            <div class="row-short"> 
+                <link rel="stylesheet" href="">
+                <link rel="stylesheet" href="">
+                <link rel="stylesheet" href="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quis, id perspiciatis dignissimos inventore necessitatibus molestiae voluptatum cupiditate? Sapiente molestiae voluptatum aspernatur est maiores consectetur rem veritatis eius ut neque.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>

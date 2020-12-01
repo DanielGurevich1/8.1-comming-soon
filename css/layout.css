@@ -1,0 +1,20 @@
+.container {
+    display: inline-block;
+    width: 100%;
+    background-color: aqua;
+
+}
+    .container > .row {
+        display: inline-block;
+        width: 1000px;
+        margin-left: calc(50%-300px);
+        background-color: burlywood;
+    }
+    .container > .row-short {
+        display: inline-block;
+        width: 600px;
+        margin-left: calc(50%-300px);
+        background-color: royalblue;
+
+    }
+    
