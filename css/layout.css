@@ -4,7 +4,7 @@
     width: 100%;
     background-color: aqua;
 
-}
+
     .container > .row-short {
         display: inline-block;
         width: 600px;
@@ -12,7 +12,32 @@
         grid-column: 3 / 5;
         /* background-color: royalblue; */
 
+    
+    .container > .row-short {
+        display: inline-block;
+        width: 600px;
+        margin-left: calc(50% - 300px);
+        background-color: royalblue;
+
     }
+    .container > .row {
+        display: inline-block;
+        width: 1000px;
+        margin-left: calc(50% - 500px);
+        background-color: burlywood;
+    }
+    .container > .row > .column {
+        display: inline-block;
+        float: left;
+    }
+
+
+    .container > .row > .column.left {
+        display: inline-block;
+        width: 50%;
+        
+    }
+
         .container > .row {
             display: inline-block;
             width: 1000px;
