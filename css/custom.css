@@ -1,2 +1,12 @@
+.container.hero {
+    padding-bottom: var(--section-padding);
+    background-image: url(../img/hero-image-dg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
-
+ .hero {
+text-align: center;
+}

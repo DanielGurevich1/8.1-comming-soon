@@ -1,20 +1,36 @@
 .container {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
     width: 100%;
     background-color: aqua;
 
 }
-    .container > .row {
-        display: inline-block;
-        width: 1000px;
-        margin-left: calc(50%-300px);
-        background-color: burlywood;
-    }
     .container > .row-short {
         display: inline-block;
         width: 600px;
-        margin-left: calc(50%-300px);
-        background-color: royalblue;
+        
+        grid-column: 3 / 5;
+        /* background-color: royalblue; */
 
     }
-    
+        .container > .row {
+            display: inline-block;
+            width: 1000px;
+            grid-column: 2 / 6;
+        }
+                .container > .row > .column {
+                    display: inline-block;
+                    float: left;
+                }
+                .container > .row > .column.left {
+                    
+                    width: 50%;
+                    /* margin-left: 10%;
+                    grid-column: 2 / 3; */
+                }
+                .container > .row > .column.right {
+                    
+                    width: 40%;
+                    margin-left: 10%;
+                    /* grid-column: 4 / 5; */
+                }
