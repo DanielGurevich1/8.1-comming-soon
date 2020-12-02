@@ -15,18 +15,26 @@ text-align: center;
     margin-top: 20px;
 }
 
-.footer {
-    text-align: center;
-}
-.footer > .container {
-    padding-top: 0;
+footer.container {
+    padding-top: 0%;
     padding-bottom: calc(var(--section-padding) * 1,5);
-}
+} 
+        footer.container > .row.short {
+            text-align: center;
+            padding-top: 0;
+            
+        }
 
-.footer.container > .row.short {
+/* .footer.container > .row.short {
     padding-top: 50px;
-}
+} */
 
 .bg-main-color {
    background-color: (--main-color);
 } 
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+}
