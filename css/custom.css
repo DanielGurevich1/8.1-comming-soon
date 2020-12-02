@@ -25,9 +25,9 @@ footer.container {
             
         }
 
-/* .footer.container > .row.short {
+.footer.container > .row.short {
     padding-top: 50px;
-} */
+}
 
 .bg-main-color {
    background-color: (--main-color);
