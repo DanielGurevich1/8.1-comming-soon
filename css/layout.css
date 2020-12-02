@@ -8,15 +8,12 @@
 }
     .container > .row-short {
         display: inline-block;
-        width: 600px;
-        
+        /* width: 600px; */
         grid-column: 3 / 5;
-        /* background-color: royalblue; */
-
     }
         .container > .row {
             display: inline-block;
-            width: 1000px;
+            /* width: 1000px; */
             grid-column: 2 / 6;
         }
                 .container > .row > .column {
@@ -70,3 +67,4 @@
                 margin-top: calc(var(--selection-padding) * 2);
             }
 }
+
