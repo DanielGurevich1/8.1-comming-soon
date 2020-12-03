@@ -3,21 +3,16 @@
     background-image: url(../img/hero-image-dg.jpg);
     background-size: cover;
     background-position: bottom;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     min-height: 60vh;
 }
-
- .hero {
-text-align: center;
-}
-
-.hero > .row.short {
-    margin-top: 20px;
-}
+        .hero {
+        text-align: center;
+        }
 
 footer.container {
     padding-top: 0%;
-    padding-bottom: calc(var(--section-padding) * 1,5);
+    /* padding-bottom: calc(var(--section-padding) * 1,5); */
 } 
         footer.container > .row.short {
             text-align: center;
@@ -37,4 +32,5 @@ footer.container {
 footer {
     text-align: center;
     background-color: var(--main-color);
+    
 }
