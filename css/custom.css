@@ -19,6 +19,13 @@
             padding-top: 0;
             
         }
+    
+
+
+.footer.container > .row.short {
+    padding-top: 50px;
+}
+
 
 .bg-main-color {
    background-color: (--main-color);
