@@ -1,14 +1,13 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
+    grid-template-columns: 1fr 100px 300px 300px 100px 1fr;
     width: 100%;
-    padding-top: var(--section-padding);
+    /* padding-top: var(--section-padding); */
     /* background-color: aqua; */
 
 }
     .container > .row-short {
         display: inline-block;
-        width: 600px;
         padding-top: var(--section-padding);
         grid-column: 3 / 5;
         background-color: royalblue;
@@ -16,7 +15,6 @@
     }
         .container > .row {
             display: inline-block;
-            width: 1000px;
             grid-column: 2 / 6;
             background-color: green
         }
@@ -63,16 +61,18 @@
     .container > .row-short, 
     .container > .row {
         grid-column: 2 / 3;
+        background-color: violet;
     }
 
-            .conteiner > .row > .column.left {
-                width: 100%; 
-                grid-column: 2 / 3;
-            }
-            .conteiner > .row > .column.right {
+            .container > .row > .column.left {
                 width: 100%;
-                grid-column: 2 / 3;
+                
+            }
+            .container > .row > .column.right {
+                width: 100%;
                 margin: 0px;
                 margin-top: calc(var(--selection-padding) * 2);
+                
             }
+    }   
 }
