@@ -1,3 +1,6 @@
+/* custom css - everything else, that was not styled with components css */
+
+/* layout */
 .container.hero {
     padding-bottom: clac(var(--section-padding) * 0,5);
     background-image: url(../img/hero-image-dg.jpg);
@@ -6,33 +9,65 @@
     /* background-attachment: fixed; */
     min-height: 60vh;
 }
-        .hero {
-        text-align: center;
-        }
 
-.footer > .container > .row {
-    padding-top: 0%;
-    padding-bottom: calc(var(--section-padding) * 1,5);
-} 
-        footer.container > .row.short {
-            text-align: center;
-            padding-top: 0;
-            
-        }
-    
-
-
-.footer.container > .row.short {
-    padding-top: 50px;
+.container > .row > .column.left {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container > .row > .column.right {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
+
+.footer > .container {
+    padding-top: 0%;
+    padding-bottom: calc(var(--section-padding) * 1,5);
+} 
+footer.container > .row.short {
+    text-align: center;
+    padding-top: 0;
+    
+}
+
+.footer.container > .row.short {
+    margin-top: var(--section-padding);
+}
+
 .bg-main-color {
-   background-color: (--main-color);
+    background-color: (--main-color);
 } 
 
+/* hero  */
+.hero {
+text-align: center;
+}
+
+.hero h1 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--hero-space);
+    text-transform: uppercase;
+}
+
+.hero p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: calc(var(--hero-space) * 3);
+    font-size: 18px;
+    color: var(--grey-color);
+}
+
+.hero clock {
+    margin-bottom: calc(val(--hero-space) * 2);
+}
+
+.hero form {
+    width: 90%; 
+    margin: 0 5% var(--hero-space);
+}
+
 /* footer */
-footer {
+.footer > .container {
     text-align: center;
     background-color: var(--main-color);
     
