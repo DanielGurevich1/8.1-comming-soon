@@ -1,0 +1,1 @@
+import { renderClock } from "./components/clock/renderClock.js"
