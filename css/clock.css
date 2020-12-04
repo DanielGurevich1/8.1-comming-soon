@@ -4,7 +4,7 @@
 }
     .clock .time {
         display: inline-block;
-        float: left;
+        /* float: left; */
         width: 25%;
         text-transform: uppercase;
         color: #fff;
