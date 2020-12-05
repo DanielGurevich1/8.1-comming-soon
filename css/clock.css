@@ -2,15 +2,17 @@
     display: inline-block;
     width: 100%;
 }
-    .clock .time {
+    .clock .time-box {
         display: inline-block;
-        /* float: left; */
+        float: left;
         width: 25%;
         text-transform: uppercase;
         color: #fff;
-        font-size: 40px;
+        
     }
+        .clock .time-box > .time {
+            font-size: 40px;
+        }
         .clock .span {
             display: inline-block;
-            position: under center;
         }

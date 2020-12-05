@@ -1,4 +1,4 @@
-import { countTimeDiff } from "./clockTimeDiff/js";
+import { countTimeDiff } from "./clockTimeDiff.js";
 
 // Target date is a new year evening.
 // 2021-01-01 00:00:00
@@ -46,14 +46,14 @@ import { countTimeDiff } from "./clockTimeDiff/js";
                 const timesDOM = DOM.querySelectorAll(' .time');
 
                 //palaidziame laikrodzio mechanika
-                let timePassed = 0;
+                let timePassed = 0; 
 
                 setInterval(() => {
                     const time = countTimeDiff();
-                    timeDOM[0].innerHTML = time.days;
-                    timeDOM[1].innerHTML = time.hours;
-                    timeDOM[2].innerHTML = time.minutes;
-                    timeDOM[3].innerHTML = time.seconds;
+                    timesDOM[0].innerHTML = time.days;
+                    timesDOM[1].innerHTML = time.hours;
+                    timesDOM[2].innerHTML = time.minutes;
+                    timesDOM[3].innerHTML = time.seconds;
                 }, 1000);
 return true;
 
