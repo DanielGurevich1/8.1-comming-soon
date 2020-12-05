@@ -11,7 +11,6 @@
 
         padding-top: var(--section-padding);
         grid-column: 3 / 5;
-        background-color: royalblue;
 
     }
         .container > .row {
