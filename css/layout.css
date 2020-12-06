@@ -2,27 +2,22 @@
     display: grid;
     grid-template-columns: 1fr 100px 300px 300px 100px 1fr;
     width: 100%;
-    /* padding-top: var(--section-padding); */
-    /* background-color: aqua; */
-
-}
+    }
     .container > .row-short {
         display: inline-block;
-
         padding-top: var(--section-padding);
         grid-column: 3 / 5;
 
     }
         .container > .row {
             display: inline-block;
-
-        /* width: 600px; */
-        grid-column: 3 / 5;
+            grid-column: 3 / 5;
+            background-color: yellow;
     }
         .container > .row {
             display: inline-block;
-            /* width: 1000px; */
             grid-column: 2 / 6;
+            margin-bottom: var(--section-padding);
         }
                 .container > .row > .column {
                     display: inline-block;
