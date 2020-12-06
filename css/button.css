@@ -1,0 +1,10 @@
+.btn {
+    display: inline-block;
+    /* width: 35%; */
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.form .btn {
+    float: right;
+}
