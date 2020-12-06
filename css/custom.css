@@ -10,14 +10,6 @@
     min-height: 60vh;
 }
 
-.container > .row > .column.left {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container > .row > .column.right {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
 .footer > .container {
     padding-top: 0%;
     padding-bottom: calc(var(--section-padding) * 1,5);
@@ -94,12 +86,13 @@ footer {
             padding: 10px 20px;
             border-bottom: 1px solid #fff;
             position: relative;
-            
+            background-color: beige;            
         }
 
         footer > .row > .btn.circle {
             display: inline-block;
             width: 40px;
+            height: 40px;
             padding: 10px;
             line-height: 20px;
             color: #fff;
@@ -113,10 +106,10 @@ footer {
             color: var(--main-color);
             
         }
-        footer .btn.circle {
+        footer .btn .circle {
 
-            position: absolute;
-            top: -24px;
-            right: -13px;
+            position: relative;
+            /* top: -20px;
+            right: -13px; */
         }
         

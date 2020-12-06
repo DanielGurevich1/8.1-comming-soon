@@ -4,4 +4,4 @@ import { socialsData } from "./data/socialsData.js"
 
 renderClock(' .clock');
 
-renderSocials('footer > .row' ,  socialsData);
+renderSocials('footer > .row',  socialsData);
