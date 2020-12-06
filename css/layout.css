@@ -8,21 +8,20 @@
 }
     .container > .row-short {
         display: inline-block;
-
         padding-top: var(--section-padding);
         grid-column: 3 / 5;
+        width: 500px;
 
     }
         .container > .row {
             display: inline-block;
-
-        /* width: 600px; */
-        grid-column: 3 / 5;
+            grid-column: 3 / 5;
     }
         .container > .row {
             display: inline-block;
             /* width: 1000px; */
             grid-column: 2 / 6;
+            margin-bottom: var(--section-padding);
         }
                 .container > .row > .column {
                     display: inline-block;
