@@ -1,6 +1,6 @@
 import { renderClock } from "./components/clock/renderClock.js"
 
-import { socialsData } from "./data/socialsData.js"
+import { socialsData } from ".js/data/socialsData.js"
 
 renderClock(' .clock');
 

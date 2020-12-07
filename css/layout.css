@@ -12,7 +12,6 @@
         .container > .row {
             display: inline-block;
             grid-column: 3 / 5;
-            background-color: yellow;
     }
         .container > .row {
             display: inline-block;
@@ -60,7 +59,6 @@
     .container > .row-short, 
     .container > .row {
         grid-column: 2 / 3;
-        background-color: violet;
     }
 
             .container > .row > .column.left {
