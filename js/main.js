@@ -1,7 +1,24 @@
-import { renderClock } from "./components/clock/renderClock.js"
+import { renderSocials } from "./components/socials/renderSocials.js";
+import { socialsData } from './data/socialsData.js';
+import { renderClock } from './components/clock/renderClock.js';
 
-import { socialsData } from ".js/data/socialsData.js"
+import { renderAllProgressBars } from './components/progress-bar/renderAllProgressBars.js';
+import { progressBarData } from './data/progressBarData.js';
 
-renderClock(' .clock');
+import { formValidator } from './components/form-validator/formValidator.js';
 
-renderSocials('footer > .row',  socialsData);
+import { Toast } from './components/toast/Toast.js';
+
+renderSocials('footer > .row', socialsData);
+
+renderClock('.clock');
+
+renderAllProgressBars(progressBarData);
+
+const toast = new Toast();
+toast.render();
+// toast.show('error', 'Cia yra klaida!!!');
+// toast.show('success', 'Buvo gera diena!!! ;)');
+
+formValidator('.hero .form', toast);
+formValidator('main .form', toast);
