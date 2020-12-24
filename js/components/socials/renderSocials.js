@@ -1,5 +1,6 @@
+import { socialsData } from "../../data/socialsData.js";
 import { isInputValid } from "./isInputValid.js";
-import { isValidSocialItem } from './isValidSocialitem.js';
+import { isValidSocialItem } from './isValidSocialItem.js';
 
 /**
  * Social nuorodu generavimas is pateiktu duomenu i nurodyta vieta DOM'e.
@@ -12,6 +13,8 @@ function renderSocials(selector, data) {
     if (!isInputValid(selector, data)) {
         return false;
     }
+
+
 
     // logic
     const socialsDOM = document.querySelector(selector);
@@ -27,9 +30,11 @@ function renderSocials(selector, data) {
         if (!isValidSocialItem(item)) {
             continue;
         }
-        HTML += `<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"></a>`;
-    }
+        HTML += `<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"</a>
+        <a href="#" class="btn btn-secondary-color circle fa fa-angle-up"></a>`;
 
+    }
+    
     // post logic validation
     if (HTML === '') {
         console.error('ERROR: nepavyko sugeneruoti social ikonu/nuorodu.');

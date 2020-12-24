@@ -1,5 +1,3 @@
-
-
 /**
  * renderSocial() funkcijos metu vykdomame cikle gaunamu duomenu validacija
  * @param {object} itemObject Objektas aprasantis viena social nuoroda, kuri sudaro ikona ir nuoroda (href)
