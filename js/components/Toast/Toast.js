@@ -43,3 +43,5 @@ class Toast {
         this.DOM.insertAdjacentHTML('beforeend', HTML);
     }
 }
+
+export { Toast }

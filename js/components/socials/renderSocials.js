@@ -1,4 +1,3 @@
-import { socialsData } from "../../data/socialsData.js";
 import { isInputValid } from "./isInputValid.js";
 import { isValidSocialItem } from './isValidSocialItem.js';
 
@@ -8,42 +7,68 @@ import { isValidSocialItem } from './isValidSocialItem.js';
  * @param {Array} data Duomenu masyvas su objektais, kurie reprezentuoja social nuorodas
  * @returns {boolean} Logikos vykdymo metu radus klaida grazinas `false`, o funkcijai suveikus teisingai - `true`
  */
-function renderSocials(selector, data) {
-    // input validation
-    if (!isInputValid(selector, data)) {
-        return false;
-    }
-
-
-
+function renderSocials(data) {
+    
     // logic
-    const socialsDOM = document.querySelector(selector);
-    if (!socialsDOM) {
-        console.error('ERROR: nerasta turinio generavimo vieta');
-        return false;
-    }
-
+    const socialsDOM = document.querySelector('footer > .row');
     let HTML = '';
-
     for (let i = 0; i < data.length; i++) {
-        const item = data[i];
-        if (!isValidSocialItem(item)) {
+        
+        const item = data[i]; 
+        if (typeof item !== 'object') {
             continue;
         }
-        HTML += `<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"</a>
-        <a href="#" class="btn btn-secondary-color circle fa fa-angle-up"></a>`;
+        if (typeof item.link !== 'string') {
+            continue;
+        }
+        // if (typeof item.icon !== 'string') {
+        //     continue;
+        // }
+         HTML += (`<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"></a>`);
+        }
+        
+        //post logic validation
+        if (HTML === '') {
+            console.error('ERROR: nepavyko sugeneruoti social items.');
+        }
 
+        socialsDOM.innerHTML = HTML;
     }
+
+
     
-    // post logic validation
-    if (HTML === '') {
-        console.error('ERROR: nepavyko sugeneruoti social ikonu/nuorodu.');
-        return false
-    }
+    // if (!isValidSocialItem(item)) {
+    //     continue;
+    // input validation
+//     if (!isInputValid(selector, data)) {
+//         return false;
+//     }  
 
-    // return
-    socialsDOM.innerHTML += HTML;
-    return true;
-}
+
+
+//     // logic
+//     const socialsDOM = document.querySelector(selector);
+//     if (!socialsDOM) { 
+//         console.error('ERROR: nerasta turinio generavimo vieta');
+//         return false;
+//     }
+
+//     let HTML = '';
+
+    
+//         HTML += `<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"</a>`;
+
+//     }
+    
+//     // post logic validation
+//     if (HTML === '') {
+//         console.error('ERROR: nepavyko sugeneruoti social ikonu/nuorodu.');
+//         return false;
+//     }
+
+//     // return
+//     socialsDOM.innerHTML += HTML;
+//     return true;
+// }
 
 export { renderSocials }

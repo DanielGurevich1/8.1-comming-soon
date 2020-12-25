@@ -2,7 +2,7 @@
 
 /* layout */
 .container.hero {
-    padding-bottom: var(--section-padding);
+    padding-bottom: clac(var(--section-padding)*2);
     background-image: url(../img/hero-image.jpg);
     background-size: cover;
     background-position: bottom center;
@@ -67,6 +67,9 @@ footer.container {
     }
 
 /* main content */
+main.container .row {
+    margin-bottom: calc(var(--main-space) * 1.5);
+}
 main h2 {
     display: inline-block;
     width: 100%;
@@ -104,15 +107,15 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
-        padding: 10px 20px;
+        padding: 10px 10px;
         border-bottom: 1px solid #fff;
         position: relative;
     }
     footer .social.fa {
         display: inline-block;
-        width: 40px;
+        width: 30px;
         padding: 10px;
-        line-height: 20px;
+        line-height: 24px;
         color: #fff;
         text-align: center;
         border-radius: 50%;

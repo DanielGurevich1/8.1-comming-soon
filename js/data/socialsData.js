@@ -27,6 +27,10 @@ const socialsData = [
     icon: 'rss',
     link: '#'
 },
+{
+    icon: 11,
+    link: '#'
+},
 
 
 ];
