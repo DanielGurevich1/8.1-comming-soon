@@ -28,8 +28,8 @@ const socialsData = [
     link: '#'
 },
 {
-    icon: 11,
-    link: '#'
+    icon: '',
+    link: ''
 },
 
 

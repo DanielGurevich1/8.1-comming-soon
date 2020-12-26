@@ -4,21 +4,13 @@
  * @param {Array} data Duomenu masyvas su objektais, kurie reprezentuoja social nuorodas
  * @returns {boolean} Jei patikrinimo metu randama logine duomenu klaida, tai grazina `false`, priesingu atveju - `true`
  */
-function isInputValid(selector, data) {
-    if (typeof selector !== 'string') {
-        console.error('ERROR: selectorius turi buti tekstinio tipo.')
-        return false;
-    }
-    if (selector === '') {
-        console.error('ERROR: selectorius negali buti tuscias tekstas.')
-        return false;
-    }
+function isInputValid(data) {
     if (!Array.isArray(data)) {
-        console.error('ERROR: social ikonom generuoti reikia array tipo duomenu.');
-        return false;
+        console.error('ERROR: nerastas duomenu masivas.');
+        return;
     }
     if (data.length === 0) {
-        console.error('ERROR: social ikonom generuoti reikia ne tuscio array tipo duomenu saraso.');
+        console.error('ERROR: doumenu sarasas negali buti tuscias.');
         return false;
     }
     return true;

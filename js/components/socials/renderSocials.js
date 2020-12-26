@@ -8,7 +8,10 @@ import { isValidSocialItem } from './isValidSocialItem.js';
  * @returns {boolean} Logikos vykdymo metu radus klaida grazinas `false`, o funkcijai suveikus teisingai - `true`
  */
 function renderSocials(data) {
-    
+    // input validation
+    if(!isInputValid(data)) {
+        return false;
+    }
     // logic
     const socialsDOM = document.querySelector('footer > .row');
     let HTML = '';
@@ -18,12 +21,12 @@ function renderSocials(data) {
         if (typeof item !== 'object') {
             continue;
         }
-        if (typeof item.link !== 'string') {
+        if (typeof item.link !== 'string' || item.link === '') {
             continue;
         }
-        // if (typeof item.icon !== 'string') {
-        //     continue;
-        // }
+        if (typeof item.icon !== 'string' || item.icon === '') {
+            continue;
+        }
          HTML += (`<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"></a>`);
         }
         
