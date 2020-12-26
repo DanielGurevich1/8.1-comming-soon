@@ -27,10 +27,7 @@ const socialsData = [
     icon: 'rss',
     link: '#'
 },
-{
-    icon: '',
-    link: ''
-},
+
 
 
 ];

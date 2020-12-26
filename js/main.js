@@ -23,4 +23,5 @@ renderClock('.clock');
 // formValidator('.hero .form', toast);
 // formValidator('main .form', toast);
 
+const socialsDOM = document.querySelector(selector);
 

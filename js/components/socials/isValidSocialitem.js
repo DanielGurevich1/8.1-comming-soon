@@ -5,17 +5,15 @@
  */
 function isValidSocialItem(itemObject) {
     if (typeof itemObject !== 'object') {
-        console.warn('ERROR: social elemento turetu buti objektas');
+        console.warn('warn: nepaviko rasti objekto');
         return false;
     }
-    if (typeof itemObject.link !== 'string' ||
-        itemObject.link === '') {
-        console.warn('ERROR: social elemento nuoroda turetu buti tekstine ir ne tuscia');
+    if (typeof itemObject.link !== 'string' || itemObject.link === '') {
+        console.warn('warn: objekto linkas yra ne string tipo');
         return false;
     }
-    if (typeof itemObject.icon !== 'string' ||
-        itemObject.icon === '') {
-        console.warn('ERROR: social elemento ikona turetu buti tekstine ir ne tuscia');
+    if (typeof itemObject.icon !== 'string' || itemObject.icon === '') {
+        console.warn('warn: ikona yra netinkamo formato');
         return false;
     }
     return true;

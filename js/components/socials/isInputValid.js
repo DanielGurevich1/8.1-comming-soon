@@ -5,12 +5,21 @@
  * @returns {boolean} Jei patikrinimo metu randama logine duomenu klaida, tai grazina `false`, priesingu atveju - `true`
  */
 function isInputValid(data) {
+
+    if (typeof selector !== 'string') {
+        console.error('ERROR: selector turo buti tekstinio tipo. ');
+        return false;
+    }
+    if (selector !== '') {
+        console.error('ERROR: selector negali buti tuscias');
+        return false;
+    }
     if (!Array.isArray(data)) {
         console.error('ERROR: nerastas duomenu masivas.');
         return;
     }
     if (data.length === 0) {
-        console.error('ERROR: doumenu sarasas negali buti tuscias.');
+        console.error('ERROR: doumenu sarasas negali buti tuscias.'); 
         return false;
     }
     return true;
