@@ -31,19 +31,18 @@
     }
             .progress-bar > .bottom > .bar {
                 display: inline-block;
-                width: 80%;
-                /* vertical-align: top; */
-                height: 4px;
+                height: 100%;
                 background-color: var(--main-color);
             }
             .progress-bar > .bottom > .bar > .loader {
                 display: inline-block;
                 width: 100%;
-                /* vertical-align: top; */
                 height: 100%;
                 background-color: var(--main-color);
-                animation-name: loading 2s; 
-            }
+                animation-name: loading;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            } 
 
 @keyframes loading {
 
