@@ -15,7 +15,7 @@ function renderSocials(data) {
     // logic
     const socialsDOM = document.querySelector('footer > .row');
     let HTML = '';
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {   
         
         const item = data[i]; 
         if (typeof item !== 'object') {
