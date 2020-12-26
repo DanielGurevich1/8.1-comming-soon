@@ -68,6 +68,7 @@ footer.container {
 
 /* main content */
 main.container .row {
+    margin-top: 20px;
     margin-bottom: calc(var(--main-space) * 1.5);
 }
 main h2 {
@@ -115,7 +116,7 @@ footer {
         display: inline-block;
         width: 30px;
         padding: 10px;
-        line-height: 24px;
+        line-height: 18px;
         color: #fff;
         text-align: center;
         border-radius: 50%;

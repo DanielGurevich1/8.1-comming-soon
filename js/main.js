@@ -2,8 +2,9 @@ import { renderSocials } from "./components/socials/renderSocials.js";
 import { socialsData } from './data/socialsData.js';
 import { renderClock } from './components/clock/renderClock.js';
 
-// import { renderAllProgressBars } from './components/progress-bar/renderAllProgressBars.js';
-// import { progressBarData } from './data/progressBarData.js';
+import { renderAllProgressBars } from "./components/progressBar/renderAllProgressBars.js";
+
+import { progressBarData } from './data/progressBarData.js';
 
 // import { formValidator } from './components/form-validator/formValidator.js';
 
@@ -11,9 +12,9 @@ import { Toast } from './components/toast/Toast.js';
 
 renderSocials(socialsData);
 
-renderClock('.clock');
+renderClock('.clock');   
 
-// renderAllProgressBars(progressBarData);
+renderAllProgressBars(progressBarData);
 
 // const toast = new Toast();
 // toast.render();
