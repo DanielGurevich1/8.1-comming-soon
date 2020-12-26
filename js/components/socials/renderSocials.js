@@ -35,7 +35,7 @@ function renderSocials(data) {
             console.error('ERROR: nepavyko sugeneruoti social items.');
         }
 
-        socialsDOM.innerHTML = HTML;
+        socialsDOM.innerHTML += HTML;
     }
 
 
