@@ -1,3 +1,4 @@
+import { isValidSingleProgressBar } from './isValidSingleProgressBar.js';
 /**
  * @param {string} selector css like selector, how to find location to generate progress-bars
  * @param {*} title progress bar title

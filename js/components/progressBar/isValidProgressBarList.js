@@ -7,5 +7,6 @@ function isValidProgressBarList(list) {
         console.error('ERROR: array turi buti  ne tuscias');
         return false;
      }
+     return true;
 }
 export { isValidProgressBarList }
